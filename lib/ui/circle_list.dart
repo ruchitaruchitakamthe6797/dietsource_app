@@ -19,7 +19,7 @@ class ShowDemoPage extends StatelessWidget {
     ];
     return Center(
         child: CircleList(
-      origin: Offset(0, 0),
+      origin: Offset(-10, 0),
       children: _build(snapshot),
     ));
   }
