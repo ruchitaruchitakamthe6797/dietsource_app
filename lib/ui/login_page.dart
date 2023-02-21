@@ -37,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
                 children: [
                   // Image.asset(''),
                   SizedBox(
-                    height: 60,
+                    height: 50,
                   ),
                   CircleAvatar(
                     backgroundColor: AppColors.buttonColor,
@@ -49,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
                     ), //Text
                   ),
                   SizedBox(
-                    height: 120,
+                    height: 90,
                   ),
                   _buildEmailFeild(),
                   SizedBox(

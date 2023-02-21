@@ -28,6 +28,8 @@ class _ResentTransactionsState extends State<ResentTransactions> {
               padding:
                   const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+
                 // mainAxisSize: MainAxisSize.max,
                 children: [
                   // Image.asset(''),
@@ -58,7 +60,7 @@ class _ResentTransactionsState extends State<ResentTransactions> {
                     ],
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 10,
                   ),
                   Row(
                     // mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -87,12 +89,24 @@ class _ResentTransactionsState extends State<ResentTransactions> {
                     ],
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 15,
                   ),
 
                   _buildCategoryList(),
                   SizedBox(
-                    height: 20,
+                    height: 15,
+                  ),
+                  Text(
+                    'Today',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                        fontSize: 18,
+                        color: AppColors.buttonColor,
+                        fontWeight: FontWeight.w700),
+                  ),
+                  SizedBox(
+                    height: 15,
                   ),
                   _buildCardWidget(Icons.mark_as_unread_outlined, 'Payment',
                       'Payment from andrea', '\$30.00'),
