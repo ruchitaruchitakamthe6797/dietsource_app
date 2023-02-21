@@ -7,6 +7,7 @@ import 'package:dietsource_app/widgets/login_textfeild.dart';
 import 'package:dietsource_app/widgets/password_feild.dart';
 import 'package:dietsource_app/widgets/textbutton_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/src/size_extension.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -37,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
                 children: [
                   // Image.asset(''),
                   SizedBox(
-                    height: 50,
+                    height: 50.h,
                   ),
                   CircleAvatar(
                     backgroundColor: AppColors.buttonColor,
@@ -49,19 +50,19 @@ class _LoginPageState extends State<LoginPage> {
                     ), //Text
                   ),
                   SizedBox(
-                    height: 90,
+                    height: 90.h,
                   ),
                   _buildEmailFeild(),
                   SizedBox(
-                    height: 20,
+                    height: 20.h,
                   ),
                   _buildPassWordFeild(),
                   SizedBox(
-                    height: 20,
+                    height: 20.h,
                   ),
                   _buildButton(),
                   SizedBox(
-                    height: 30,
+                    height: 30.h,
                   ),
                   Row(
                     children: [

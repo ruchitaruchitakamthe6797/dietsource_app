@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   http: 0.13.3
   flutter_screenutil: ^5.0.1
+  circle_list: ^1.0.5
 
 
 dev_dependencies:

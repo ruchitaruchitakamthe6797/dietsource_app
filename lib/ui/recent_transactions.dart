@@ -1,6 +1,7 @@
 // ignore_for_file: unused_element
 
 import 'package:dietsource_app/constant/app_colors.dart';
+import 'package:dietsource_app/ui/circle_list.dart';
 import 'package:dietsource_app/widgets/category_button.dart';
 import 'package:dietsource_app/widgets/elevated%20_button.dart';
 import 'package:dietsource_app/widgets/payment_card.dart';
@@ -113,7 +114,9 @@ class _ResentTransactionsState extends State<ResentTransactions> {
                   SizedBox(
                     height: 20,
                   ),
-                  _buildCircular(),
+                  // _buildCircular(),
+                  _buildDemo(),
+
                   SizedBox(
                     height: 20,
                   ),
@@ -133,6 +136,45 @@ class _ResentTransactionsState extends State<ResentTransactions> {
       text: text,
       desc: desc,
       amount: amount,
+    );
+  }
+
+  _buildDemo() {
+    return Stack(
+      alignment: Alignment.center,
+      children: [
+        Center(
+          child: Container(
+            decoration: BoxDecoration(
+                // color: Colors.blue,
+                shape: BoxShape.circle,
+                border: Border.all(color: Colors.grey.shade400)),
+            child: Padding(
+              padding: const EdgeInsets.all(40.0),
+              child: CircleAvatar(
+                  backgroundColor: Colors.blue.shade100,
+                  radius: 110,
+                  child: CircleAvatar(
+                    backgroundColor: AppColors.circleColor,
+                    radius: 90,
+                    child: CircleAvatar(
+                        backgroundColor: AppColors.buttonColor,
+                        radius: 60,
+                        child: CircleAvatar(
+                            backgroundColor: Colors.white,
+                            radius: 55,
+                            child: CircleAvatar(
+                              backgroundColor: Colors.pink.shade300,
+                              radius: 50,
+                              backgroundImage: NetworkImage(
+                                  'https://img.freepik.com/free-photo/business-concept-portrait-confident-young-businesswoman-keeping-arms-crossed-looking-camera-w_1258-104422.jpg?w=2000'),
+                            ))),
+                  )),
+            ),
+          ),
+        ),
+        ShowDemoPage(),
+      ],
     );
   }
 

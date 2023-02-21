@@ -11,4 +11,7 @@ class AppColors {
   static const Color bottomBarIconColor = Color(0xFF5c5f64);
   static const Color cardShadowColor = Color(0xFFccd7e9);
   static const Color amountColor = Color(0xFF515892);
+  static const Color circleColor = Color(0xFFeff6ff);
+
+  
 }
