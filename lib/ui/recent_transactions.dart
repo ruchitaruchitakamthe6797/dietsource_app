@@ -112,7 +112,7 @@ class _ResentTransactionsState extends State<ResentTransactions> {
                   _buildCardWidget(Icons.mark_as_unread_outlined, 'Payment',
                       'Payment from andrea', '\$30.00'),
                   SizedBox(
-                    height: 20,
+                    height: 5,
                   ),
                   // _buildCircular(),
                   _buildDemo(),
